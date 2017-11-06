@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.caiy.learn.increment.update.MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="copy"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="拷贝资源" />
+
+        <Button
+                android:id="@+id/btn_install_old"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="installOld"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="安装旧版本APK" />
+
+        <Button
+                android:id="@+id/btn_start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bsdiff"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="生成补丁" />
+
+        <Button
+                android:id="@+id/btn_end"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bspatch"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="打补丁" />
+
+        <Button
+                android:id="@+id/btn_install"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="installNew"
+                android:paddingBottom="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="0dp"
+                android:text="安装新版本APK" />
+
+    </LinearLayout>
+
+    <ProgressBar
+            android:id="@+id/loadding"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+</FrameLayout>
